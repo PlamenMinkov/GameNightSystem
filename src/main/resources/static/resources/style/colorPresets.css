@@ -1,0 +1,19 @@
+.white {
+  color: white;
+}
+.whiteBG {
+  background-color: white;
+}
+.black {
+  color: black;
+}
+.blackBG {
+  background-color: black;
+}
+
+.prCol {
+  color: #ff9800;
+}
+.prColBGHover:hover {
+  background-color: #65CB32;
+}

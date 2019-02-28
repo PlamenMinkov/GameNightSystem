@@ -1,0 +1,417 @@
+/* === GAME NIGHT MAIN STYLESHEET === */
+
+/* --- Fonts --- */
+@font-face {
+	font-family: RobotoSlab;
+	src: url(fonts/RobotoSlab-Regular.ttf);
+}
+
+/* --- Font styles --- */
+.sansSerif {
+	font-family: Roboto, Open Sans, arial, sans-serif
+}
+
+.robotoSlab {
+	font-family: RobotoSlab;
+}
+
+/* --- Font Sizes --- */
+
+/* --- Common Classes --- */
+.relative {
+	position: relative;
+}
+
+a:link, a:visited, a:hover, a:active {
+	color: black;
+	text-decoration: none;
+}
+
+.align_left {
+	text-align: left;
+}
+
+.align_right {
+	text-align: right;
+}
+
+.align_center {
+	text-align: center;
+}
+
+.justifyBetween {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.justifyAround {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+
+.flex1x {
+	flex-grow: 1;
+}
+
+.flex2x {
+	flex-grow: 2;
+}
+
+.right {
+	float: right;
+}
+
+.clear {
+	clear: both;
+}
+
+.oneThird {
+	display: inline-block;
+	width: 30%;
+	margin-bottom: 10px;
+}
+
+/* --- Padding Classes --- */
+.padding80 {
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.padding60 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.padding40 {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.padding20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.noPaddingTop {
+	padding-top: 0;
+}
+
+.noPaddingBottom {
+	padding-bottom: 0;
+}
+
+.hidenUserMenu {
+	background-color: #65CB32;
+}
+
+.gameForm {
+	height: 82px;
+	max-height: 82px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.gameForm::-webkit-scrollbar {
+	border-radius: 10px;
+	width: 12px; /* for vertical scrollbars */
+	height: 12px; /* for horizontal scrollbars */
+}
+
+.gameForm::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+.gameForm::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+.stripe {
+	width: -webkit-calc(100% - 2rem);
+	width: -moz-calc(100% - 2rem);
+	width: -ms-calc(100% - 2rem);
+	width: -o-calc(100% - 2rem);
+	width: calc(100% - 2rem);
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.content {
+	width: 1440px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* --- Header Styles --- */
+.logo {
+	font-size: 2rem;
+}
+
+.topStripeIconGroup {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.topStripeIcon {
+	font-size: 1rem;
+	margin-left: 1rem;
+	color: #999;
+}
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+.menu a, .menu span {
+	display: block;
+	padding: 0.8rem 1.6rem;
+	color: white;
+}
+
+.menu a:hover {
+	background-color:
+}
+
+/* --- Home Page --- */
+#hero {
+	background-image: url(../images/slider/Dark-Souls-II.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 430px;
+}
+
+.infoBitPic {
+	display: inline-block;
+}
+
+.infoBitPic img {
+	height: 100px;
+}
+
+.infoBitText {
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* --- Profile Page --- */
+.userPic {
+	margin-top: 1em;
+	height: 100px;
+	width: 100%;
+}
+
+.newGameTile {
+	cursor: pointer;
+	border: 1px dotted #999;
+	padding: 16px;
+}
+
+.newGameTile:hover {
+	background-color: #efe;
+}
+
+.newGameTile h2 {
+	margin-top: 0;
+}
+
+.gameName {
+	padding: 10px 20px;
+}
+
+.gameDescription {
+	margin-top: 5px;
+	width: 100%;
+	height: 60px;
+}
+
+.deleteGame {
+	cursor: pointer;
+	color: red;
+}
+
+/* --- Login Page --- */
+.panel {
+	display: inline-block;
+}
+
+.panel input {
+	padding: 10px 20px;
+	width: 100%;
+}
+
+.panel input:last-child {
+	width: -webkit-calc(100% + 44px);
+	width: -moz-calc(100% + 44px);
+	width: -ms-calc(100% + 44px);
+	width: -o-calc(100% + 44px);
+	width: calc(100% + 44px);
+}
+
+.registerInfo {
+	display: inline-block;
+	width: calc(100% - 320px);
+	margin-left: 80px;
+}
+
+/* --- Game Page --- */
+.gameTile {
+	padding: 16px;
+	box-shadow: 2px 2px 4px #666;
+}
+
+.gameTile h2 {
+	margin-top: 0;
+}
+
+.title {
+	margin-bottom: 60px;
+}
+
+.gameVote {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	font-size: 1.2rem;
+}
+
+.vote {
+	margin-left: 10px;
+}
+
+.voteUp:hover {
+	cursor: pointer;
+	color: lawngreen;
+}
+
+.voteDown:hover {
+	cursor: pointer;
+	color: red;
+}
+/* --- Admin Page --- */
+.userList {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.userList li {
+	height: 1.5rem;
+}
+
+.userList span {
+	display: inline-block;
+}
+
+.cellTitle {
+	font-size: 0.8rem;
+}
+
+.username {
+	left: 0;
+}
+
+.name {
+	left: 15%;
+}
+
+.familyName {
+	left: 30%;
+}
+
+.activePeriod {
+	left: 45%;
+}
+
+.may {
+	left: 50%;
+}
+
+.jun {
+	left: 55%;
+}
+
+.jul {
+	left: 60%;
+}
+
+.aug {
+	left: 65%;
+}
+
+.sep {
+	left: 70%;
+}
+
+.oct {
+	left: 75%;
+}
+
+.nov {
+	left: 80%;
+}
+
+.dec {
+	left: 85%;
+}
+
+/* --- Footer --- */
+footer {
+	/* position: absolute; */
+	bottom: 0;
+	width: 100%;
+}
+
+.footerStripe {
+	height: 44px;
+}
+
+.bottomMenu {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+.bottomMenu a {
+	border-right: 1px solid #999;
+}
+
+/* --- Media Queries --- */
+@media ( max-width : 1440px) {
+	.content {
+		width: -webkit-calc(100% - 32px);
+		width: -moz-calc(100% - 32px);
+		width: -ms-calc(100% - 32px);
+		width: -o-calc(100% - 32px);
+		width: calc(100% - 32px);
+		margin-left: 16px;
+		margin-right: 16px;
+	}
+}
+
+.searchForm table {
+	margin: 0px auto;
+}
+
+.votes {
+	float: right;
+	margin-right: 7%;
+}
